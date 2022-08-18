@@ -8,13 +8,14 @@
   <ion-card-content>
   <ion-item>
     
-    <ion-input placeholder="Nombre de usuario"></ion-input>
+    <ion-input [(ngModel)]="user.email" placeholder="Correo de usuario"></ion-input>
    </ion-item>
    <br>
    <ion-item>
-    <ion-input placeholder="contraseña" type="password"></ion-input>
+    <ion-input [(ngModel)]="user.password" placeholder="contraseña" type="password"></ion-input>
    </ion-item>
    <br>
-   <ion-button (click)="logMeIn()">Ingresar</ion-button>
+   <ion-button expand="block" (click)="login()">Ingresar</ion-button>
+   <ion-button expand="block" color="secondary" (click)="register()">Registrarse</ion-button>
   </ion-card-content>
 </ion-content>
